@@ -88,6 +88,24 @@ You can also pipe content:
 cat path-to-file.pdf | markitdown
 ```
 
+### Password-Protected Files
+
+To convert a password-protected file (e.g., an encrypted PDF), use the `--password` option:
+
+```bash
+markitdown path-to-file.pdf -o document.md --password YOUR_PASSWORD
+```
+
+Or using the Python API:
+
+```python
+from markitdown import MarkItDown
+
+md = MarkItDown()
+result = md.convert("path-to-file.pdf", password="YOUR_PASSWORD")
+print(result.text_content)
+```
+
 ### Optional Dependencies
 MarkItDown has optional dependencies for activating various file formats. Earlier in this document, we installed all optional dependencies with the `[all]` option. However, you can also install them individually for more control. For example:
 
