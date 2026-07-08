@@ -73,6 +73,10 @@ pip install -e 'packages/markitdown[all]'
 ### Command-Line
 
 ```bash
+"C:\Users\jperdomo\AppData\Local\Python\bin\python.exe" -m markitdown input/file.pdf -o output/file.md
+```
+
+```bash
 markitdown path-to-file.pdf > document.md
 ```
 
